@@ -1,5 +1,5 @@
 <template>
-	<div class="home">
+	<div class="home" v-loading.fullscreen.lock="fullscreenLoading">
 		<div class="item" @click="gotoPage('color')">
 			<img src="@/assets/image/icon-color.png" />
 			<h3>颜色转换工具</h3>
@@ -16,11 +16,14 @@
 <script>
 	export default {
 		name: 'Home',
-		props: {
-			
+		data: function(){
+			return {
+				fullscreenLoading: false
+			}
 		},
 		methods: {
 			gotoPage(name) {
+				this.fullscreenLoading = true;
 				this.$router.push({name: name});
 			}
 		}
