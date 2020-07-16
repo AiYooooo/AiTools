@@ -12,6 +12,7 @@ const routes = [
         name: 'home',
         path: '/home',
         component: () => import('@/pages/Home'),
+        meta: {title: '一套简洁易用的工具集'}
     },
     {
         name: 'color',
