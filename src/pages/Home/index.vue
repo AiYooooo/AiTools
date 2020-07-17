@@ -10,6 +10,11 @@
 			<h3>Excel解析工具</h3>
 			<small>用来进行Excel文档的解析。</small>
 		</div>
+		<div class="item" @click="gotoPage('qrcode')">
+			<img src="@/assets/image/icon-qrcode.png" />
+			<h3>二维码生成工具</h3>
+			<small>用来将文本信息生成二维码。</small>
+		</div>
 	</div>
 </template>
 

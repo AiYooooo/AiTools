@@ -25,6 +25,12 @@ const routes = [
         path: '/excel',
         component: () => import('@/pages/Excel'),
         meta: {title: 'Excel解析工具'}
+    },
+    {
+        name: 'qrcode',
+        path: '/qrcode',
+        component: () => import('@/pages/Qrcode'),
+        meta: {title: '二维码生成工具'}
     }
 ]
 
