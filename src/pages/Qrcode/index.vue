@@ -1,6 +1,10 @@
 <template>
 	<div class="qrcode">
         <div class="qrcode-in">
+            <h2>依赖</h2>
+            <pre>npm install qrcodejs2 --save</pre>
+        </div>
+        <div class="qrcode-in">
             <h2>输入信息生成二维码</h2>
             <div class="result-con">
                 <div>
@@ -83,6 +87,16 @@
                 border-left: 5px solid #87CEFA;
                 font-size: 20px;
                 margin: 25px 0;
+            }
+            pre {
+                width: 100%;
+                height: auto;
+                padding: 20px;
+                background-color: #f5f5f5;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 20px;
             }
             .result-con {
                 display: flex;

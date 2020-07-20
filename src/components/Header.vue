@@ -15,7 +15,7 @@ export default {
     }
   },
   watch: {
-    '$route'(to, from) {
+    '$route'(to) {
       this.title = to.meta.title ? to.meta.title : '';
     }
   }

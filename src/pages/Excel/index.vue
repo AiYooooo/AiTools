@@ -1,5 +1,9 @@
 <template>
 	<div class="excel">
+        <div class="excel-con">
+            <h2>依赖</h2>
+            <pre>npm install xlsx --save</pre>
+        </div>
         <div class="excel-top">
             <el-upload
                 class="upload-demo"
@@ -114,6 +118,33 @@
 		width: 100%;
 		height: auto;
 
+        .excel-con {
+            width: 100%;
+            height: auto;
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-bottom: 32px;
+
+            h2 {
+                padding-left: 20px;
+                border-left: 5px solid #87CEFA;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            pre {
+                width: 100%;
+                height: auto;
+                padding: 20px;
+                background-color: #f5f5f5;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
         .excel-top {
             width: 100%;
             height: 220px;

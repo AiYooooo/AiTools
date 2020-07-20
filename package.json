@@ -10,6 +10,7 @@
   "dependencies": {
     "compression-webpack-plugin": "^4.0.0",
     "core-js": "^3.6.5",
+    "cropperjs": "^1.5.7",
     "element-ui": "^2.13.2",
     "moment": "^2.27.0",
     "node-sass": "^4.14.1",

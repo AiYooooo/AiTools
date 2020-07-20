@@ -1,19 +1,9 @@
 <template>
 	<div class="home" v-loading.fullscreen.lock="fullscreenLoading">
-		<div class="item" @click="gotoPage('color')">
-			<img src="@/assets/image/icon-color.png" />
-			<h3>颜色转换工具</h3>
-			<small>用来进行RGB颜色和16进制颜色的转换。</small>
-		</div>
-		<div class="item" @click="gotoPage('excel')">
-			<img src="@/assets/image/icon-excel.png" />
-			<h3>Excel解析工具</h3>
-			<small>用来进行Excel文档的解析。</small>
-		</div>
-		<div class="item" @click="gotoPage('qrcode')">
-			<img src="@/assets/image/icon-qrcode.png" />
-			<h3>二维码生成工具</h3>
-			<small>用来将文本信息生成二维码。</small>
+		<div class="item" v-for="(item, index) in menus" :key="index" @click="gotoPage(item.name)">
+			<img :src="item.imgsrc" />
+			<h3>{{item.meta.title}}</h3>
+			<small>{{item.meta.des}}</small>
 		</div>
 	</div>
 </template>
@@ -23,7 +13,8 @@
 		name: 'Home',
 		data: function(){
 			return {
-				fullscreenLoading: false
+				fullscreenLoading: false,
+				menus: []
 			}
 		},
 		methods: {
@@ -31,6 +22,14 @@
 				this.fullscreenLoading = true;
 				this.$router.push({name: name});
 			}
+		},
+		mounted() {
+			this.$router.options.routes.map(item => {
+				if(item.meta.type && item.meta.type=='menu'){
+					item.imgsrc=require("../../assets/image/icon-"+item.name+".png");
+					this.menus.push(item);
+				}
+			})
 		}
 	}
 </script>

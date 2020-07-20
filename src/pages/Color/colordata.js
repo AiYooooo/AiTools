@@ -57,7 +57,7 @@ let datacolors = [
     {enname: 'MediumTurquoise', cnname: '适中的绿宝石',data16: '#48D1CC',dataRGBa: 'rgba(72,209,204,1)'},
     {enname: 'LightSeaGreen',   cnname: '浅海洋绿',data16: '#20B2AA',dataRGBa: 'rgba(32,178,170,1)'},
     {enname: 'Turquoise',       cnname: '绿宝石',data16: '#40E0D0',dataRGBa: 'rgba(64,224,208,1)'},
-    {enname: 'Auqamarin',       cnname: '绿玉\碧绿色',data16: '#7FFFAA',dataRGBa: 'rgba(127,255,170,1)'},
+    {enname: 'Auqamarin',       cnname: '绿玉/碧绿色',data16: '#7FFFAA',dataRGBa: 'rgba(127,255,170,1)'},
     {enname: 'MediumAquamarine',cnname: '适中的碧绿色',data16: '#00FA9A',dataRGBa: 'rgba(0,250,154,1)'},
     {enname: 'MediumSpringGreen',   cnname: '适中的春天的绿色',data16: '#00FF7F',dataRGBa: 'rgba(0,255,127,1)'},
     {enname: 'MintCream',           cnname: '薄荷奶油',data16: '#F5FFFA',dataRGBa: 'rgba(245,255,250,1)'},
