@@ -48,7 +48,7 @@
 			height: 280px;
 			background-color: #fff;
 			cursor: pointer;
-			margin: 0 30px 30px 0;
+			margin: 0 20px 20px 0;
 			border-radius: 2px;
 			display: flex;
 			flex-direction: column;
@@ -58,7 +58,7 @@
 			padding-top: 50px;
 
 			img {
-				width: 70px;
+				height: 70px;
 				margin-bottom: 25px;
 			}
 			h3 {
@@ -68,6 +68,9 @@
 				width: 80%;
 				text-align: center;
 			}
+		}
+		.item:nth-child(6n) {
+			margin-right: 0;
 		}
 		.item:hover {
 			transform: translateY(-5px);
