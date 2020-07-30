@@ -10,6 +10,7 @@ const routes = [
     {   name: 'excel',      path: '/excel',         component: () => import('@/pages/Excel'),       meta: { title: 'Excel解析工具',         type: 'menu',   des: '用来进行Excel文档的解析。'}},
     {   name: 'qrcode',     path: '/qrcode',        component: () => import('@/pages/Qrcode'),      meta: { title: '二维码生成工具',        type: 'menu',   des: '用来将文本信息生成二维码。'}},
     {   name: 'crop',       path: '/crop',          component: () => import('@/pages/Crop'),        meta: { title: '图片裁剪工具',          type: 'menu',   des: '用来将图片进行相应尺寸的裁剪。'}},
+    {   name: 'memorialday',path: '/memorialday',   component: () => import('@/pages/Memorialday'), meta: { title: '纪念日',                type: 'menu',   des: '哪些日子快到了呢。'}},
     {   name: 'love',       path: '/love',          component: () => import('@/pages/Love'),        meta: { title: '污污的情话',            type: 'menu',   des: '羞羞哒。'}}
 ]
 
