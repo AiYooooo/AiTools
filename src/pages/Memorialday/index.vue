@@ -37,7 +37,7 @@
                     count: 0, day: 0
                 },{
                     icon: require("../../assets/others/birthday.png"),
-                    name: '华花生日',
+                    name: '华华生日',
                     time: '1991-11-06',
                     lunar: true,
                     count: 0, day: 0
