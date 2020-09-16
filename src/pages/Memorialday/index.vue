@@ -30,6 +30,12 @@
                     lunar: false,
                     count: 0, day: 0
                 },{
+                    icon: require("../../assets/others/ai.png"),
+                    name: '河西走廊纪念',
+                    time: '2020-09-13',
+                    lunar: false,
+                    count: 0, day: 0
+                },{
                     icon: require("../../assets/others/birthday.png"),
                     name: '艾艾生日',
                     time: '1992-06-17',
