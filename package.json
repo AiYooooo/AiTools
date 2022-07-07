@@ -14,7 +14,7 @@
     "cropperjs": "^1.5.7",
     "element-ui": "^2.13.2",
     "js-md5": "^0.7.3",
-    "moment": "^2.27.0",
+    "moment": "^2.29.4",
     "node-sass": "^4.14.1",
     "qrcodejs2": "0.0.2",
     "sass-loader": "^9.0.2",
